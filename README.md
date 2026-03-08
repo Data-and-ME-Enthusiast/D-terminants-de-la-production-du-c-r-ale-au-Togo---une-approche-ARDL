@@ -56,14 +56,19 @@ Pour réaliser notre investigation, nous avons utiliser les séries temporelles 
 
 ## 5. Spécification du modèle
 Pour analyser les déterminants de la production céréalière au Togo, nous allons spécifier un modèle ARDL (AutoRegressive Distributed Lag). Le modèle ARDL est adapté pour capturer les dynamiques à court et long terme entre les variables, même lorsque les séries sont intégrées d'ordres différents (I (0) et I (1)). De façon générale le modèle ARDL se présente comme suit : 
-y_t= α+ ∑_(i=1)^p▒〖β_i y_(t-1)+ ∑_(j=0)^q▒〖δ_j x_(t-j)+ 〗  ε_t 〗
-Où : 
-- y_t est la variable dépendante.
-- x_(t-j) est la variable explicative.
-- p et q sont les ordres des lags pour les variables dépendantes et explicatives respectivement.
-- α est la constante.
-- β_i et δ_j sont les coefficients à estimer.
-- ε_t est le terme d'erreur.
+
+$$
+y_t = \alpha + \sum_{i=1}^{p} \beta_i y_{t-i} + \sum_{j=0}^{q} \gamma_j x_{t-j} + \epsilon_t
+$$
+
+## Où :
+
+1. $y_t$ est **la variable dépendante** au temps $t$.
+2. $x_t$ est **la variable explicative** au temps $t$.
+3. $p$ et $q$ sont **les ordres des lags** pour les variables dépendantes et explicatives respectivement.
+4. $\alpha$ est **la constante**.
+5. $\beta_i$ et $\gamma_j$ sont **les coefficients** à estimer.
+6. $\epsilon_t$ est **le terme d'erreur**.
 
 ## 6. Résultats et discutions 
 Cette section présente les résultats de l'analyse quantitative effectuée pour identifier les déterminants de la production de céréale au Togo. Les résultats sont basés sur les données couvrant la période de 1962 à 2023 et la modélisation multivariée des séries temporelles. 
