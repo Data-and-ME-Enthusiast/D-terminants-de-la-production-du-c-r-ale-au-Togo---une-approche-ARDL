@@ -120,7 +120,7 @@ Rejeter si F > à la valeur critique I (1)
 Tableau 3 : Test de cointégration aux bornes
 |Valeur critique|I_0 L_1|I_0 L_1 |I_0 L_05  |I_0 L_05  | I_0 L_01 |I_0 L_01  |
 |----------|----------|----------|----------|----------|----------|----------|
-| k_3      |  2,72	  | 3,77	 | 3,23	    | 4,35	   | 4,29	  |  5,61    |
+| $k_3$      |  2,72	  | 3,77	 | 3,23	    | 4,35	   | 4,29	  |  5,61    |
 | F statistic|	2,376 | 
 
 Source : Auteur, à partir des données de l’étude
@@ -140,11 +140,11 @@ Les séries $X_1$ et $X_2$ et la constante par contre ont des coefficients non s
 Tableau 3 : Résultats d'estimation du modèle ARDL (1, 0, 0, 0)
 |Variables |Coefficients|Valeurs p|
 |----------|----------|----------|
-| Y (ADJ)  |-8,257892 |  -2,623  |
+| $Y$ (ADJ)|-8,257892 |  -2,623  |
 |     LR   |          |          |
-| X1       | -10,47468| 0,566    |
-| X2       | -208,1677|  0,812   |
-| X3       | 0,0435274|  0,030   |
+| $X_1$       | -10,47468| 0,566    |
+| $X_2$       | -208,1677|  0,812   |
+| $X_3$       | 0,0435274|  0,030   |
 | Constante| -85,06581|  -0,646  |  
 		
 Source : Auteur, à partir des données de l’étude
