@@ -86,18 +86,24 @@ Source : Auteur, à partir des données de l’étude
 
 #### 6.1.2. Test de racine unitaire 
 Les résultats présentés dans le tableau ci-dessous démontrent que seule la série X_3 est stationnaire en niveau. En effet, la valeur absolue de la statistique du test (2.713) est supérieure aux valeurs seuil lues (2.619; 1.950 et 1.609). Par contre, lorsqu’on différencie les autres séries d’ordre 1, elles deviennent toutes stationnaires. La prise en compte de la série X_3 en niveau et des autres séries en différence première, nous permet d’obtenir une meilleure modélisation de nos séries. 
-Tableau 1 : Test de stationnarité
-Variables	Test ADF 	Valeurs critiques	Décision
-		1%	5%	10%	
-En niveau
-Y	-2.386     	  -3.577       	-2.928       	-2.599	Non stationnaire
-X_1	-0.289      	    -2.619   	    -1.950            	-1.610    	Non stationnaire
-X_2	1.006    	   -2.636       	-1.950       	-1.606	Non stationnaire
-X_3	-2.713*         	   -2.619       	-1.950  	-1.610	Stationnaire
-En différence première
-Y	-8.781*             	   -2.623	     -1.950	-1.609	Stationnaire
-X_1	-6.801*           	  -2.623       	-1.950	-1.609	Stationnaire
-X_2	-3.757*    	  -2.623       	-1.950       	-1.609	Stationnaire
+
+Tableau 1 : Test de stationnarité en niveau 
+
+|Variables |Test ADF  |Valeurs critiques|   |          | Décision |
+|----------|----------|----------|----------|----------|----------|
+|          |          |   1%     |5%        | 10%      |          |
+| Y        | -2,389   |  -3,577  |-2,928    |  -2,599  | Non stationnaire|
+| X1       | -0,289   |  -2,636  |-1,950    |-1,610    | Non stationnaire|
+| X2       |1,006     | -2,636   |-1,950    |-1,606    | Non stationnaire|
+| X3       |-2,713    | -2,619   |-1,950    |-1,610    | Stationnaire   |
+
+Tableau 2 : Test de stationnarité en différence première 
+|Variables |Test ADF  |Valeurs critiques|   |          | Décision |
+|----------|----------|----------|----------|----------|----------|
+|          |          |   1%     |5%        | 10%      |          |
+| Y        | -8,781   |  -2,623  |-1,950    |-1,609    |Stationnaire|
+| X1       | -6,801   |  -2,636  |-1,950    |-1,609    |Stationnaire|
+| X2       | -3,757   |  -2,636  |-1,950    |-1,609    |Stationnaire|
 
 Source : Auteur, à partir des données de l’étude
 
@@ -122,21 +128,22 @@ L’analyse spécifique des séries impliquées dans le modèle révèle que le 
 
 De la même manière, le coefficient associé à la série X_3 est significatif au seuil de 5%. Cela implique qu’une augmentation de 1 unité des terres agricoles est associée à une augmentation de 0.0435 unités de la production céréalière à long terme. Cela indique que l'augmentation de la surface de terres agricoles a un effet positif et significatif sur la production céréalière.
 
-Les séries X_1 et X_2 et la constante par contre ont des coefficients non significatifs. Ce qui signifie que la consommation d'engrais et la mécanisation agricole n'ont pas d'effet significatif sur la production céréalière à long terme et qu'il n'y a pas d'effet fixe notable sur la production céréalière à court terme (constante).
+Les séries X1 et X2 et la constante par contre ont des coefficients non significatifs. Ce qui signifie que la consommation d'engrais et la mécanisation agricole n'ont pas d'effet significatif sur la production céréalière à long terme et qu'il n'y a pas d'effet fixe notable sur la production céréalière à court terme (constante).
+
 Tableau 3 : Résultats d'estimation du modèle ARDL (1, 0, 0, 0)
-Variables	Coefficients 	Valeur p
-Y  (ADJ)	- 0,257892	0.014
-LR
-X_1	-10,47468	0.566
-X_2	-208,1677	0.812
-X_3	0,0435274	0.030
-SR
-Constante 	-85.06581	0.646
+|Variables |Coefficients|Valeurs p|
+|----------|----------|----------|
+| Y (ADJ)  |-8,257892 |  -2,623  |
+|     LR   |          |          |
+| X1       | -10,47468| 0,566    |
+| X2       | -208,1677|  0,812   |
+| X3       | 0,0435274|  0,030   |
+| Constante| -85,06581|  -0,646  |  
 		
 Source : Auteur, à partir des données de l’étude
 
 #### 6.1.5. Tests diagnostiques
-Les tests d’autocorrélation et d’hétéroscédasticité des erreurs révèlent une absence d’autocorrélation et d’hétéroscédasticité des erreurs. En effet, les p-values associées respectivement à ces tests (0.0984 et 0.1385) sont supérieurs au seuil de 5%. 
+Les tests d’autocorrélation et d’hétéroscédasticité des erreurs révèlent une absence d’autocorrélation et d’hétéroscédasticité des erreurs. En effet, les p-values associées respectivement à ces tests (0,0984 et 0,1385) sont supérieurs au seuil de 5%. 
 
 ## 7. Conclusion et recommandations
 L'analyse des déterminants de la production céréalière par hectare au Togo, sur la période 1966-2023, en utilisant un modèle ARDL a révélé plusieurs points clés. La production céréalière par hectare précédente influence négativement la production actuelle, avec une vitesse d'ajustement d'environ 25.79% par période vers l'équilibre à long terme. La seule variable significative à long terme est la surface des terres agricoles, dont l'augmentation a un effet positif et significatif sur la production céréalière. En revanche, la consommation d'engrais et la mécanisation agricole n'ont pas d'effet significatif sur la production céréalière à long terme.
@@ -146,9 +153,9 @@ Enfin, il est crucial d'investir dans des infrastructures rurales, telles que de
  
 
 ## 8. Bibliographie
-Banque mondiale.. Données sur le Togo. https://donnees.banquemondiale.org/pays/togo
-Lardja, K., & Mawuena, Y. (2022). Analyse des déterminants de la productivité agricole au Togo. https://hal.science/hal-03698579
-Liu, J., Wang, M., Yang, L., Rahman, S., & Sriboonchitta, S. (2020). Agricultural Productivity Growth and Its Determinants in South and Southeast Asian Countries. Sustainability, 12(12), Article 12. https://doi.org/10.3390/su12124981
-Omiekuma Pau, O., Sunday, ItoroEkpenyong, B., & Joseph Bidemi, O. (2018). Determinants of Agricultural Output in Nigeria. International Journal of Science and Management Studies (IJSMS), 65‑73. https://doi.org/10.51386/25815946/ijsms-v1i4p109
-Shita, A., Kumar, N., & Singh, S. (2018). Determinants of Agricultural Productivity in Ethiopia : ARDL Approach. The Indian Economic Journal, 66(3‑4), 365‑374. https://doi.org/10.1177/0019466220941418
+- Banque mondiale.. Données sur le Togo. https://donnees.banquemondiale.org/pays/togo
+- Lardja, K., & Mawuena, Y. (2022). Analyse des déterminants de la productivité agricole au Togo. https://hal.science/hal-03698579
+- Liu, J., Wang, M., Yang, L., Rahman, S., & Sriboonchitta, S. (2020). Agricultural Productivity Growth and Its Determinants in South and Southeast Asian Countries. Sustainability, 12(12), Article 12. https://doi.org/10.3390/su12124981
+- Omiekuma Pau, O., Sunday, ItoroEkpenyong, B., & Joseph Bidemi, O. (2018). Determinants of Agricultural Output in Nigeria. International Journal of Science and Management Studies (IJSMS), 65‑73. https://doi.org/10.51386/25815946/ijsms-v1i4p109
+- Shita, A., Kumar, N., & Singh, S. (2018). Determinants of Agricultural Productivity in Ethiopia : ARDL Approach. The Indian Economic Journal, 66(3‑4), 365‑374. https://doi.org/10.1177/0019466220941418
 
