@@ -72,13 +72,14 @@ Cette section présente les résultats de l'analyse quantitative effectuée pour
 #### 6.1.1. Analyse graphique
 L’analyse visuelle en niveau des séries impliquées dans notre étude révèle que ces séries ne sont pas stationnaires en niveau. En effet, les séries comme terre agricole et mécanisation agricole semble être frappé par une tendance déterministe. Tandis que les séries comme production de céréales et consommation d’engrais semble être frappé par une tendance stochastique. Bref, ces séries ne recoupent leur moyenne.  
 
-! [Figure 1: Présentation des séries en niveau] (https://D-terminants-de-la-production-du-c-r-ale-au-Togo---une-approche-ARDL/assets/images/serie_niv) 
+Figure 1: Présentation des séries en niveau
+![image alt] (https://github.com/Data-and-ME-Enthusiast/D-terminants-de-la-production-du-c-r-ale-au-Togo---une-approche-ARDL/blob/main/graphs/serie_niv.png) 
 Source : Auteur, à partir des données de l’étude
 
 Par ailleurs, l’analyse visuelle en différence première de ces séries indique qu’elles semblent être stationnaires en différence première. En effet, elles semblent recoupées leur moyenne.  
 
-! [Figure 2 : Présentation des séries en différence première] (https://D-terminants-de-la-production-du-c-r-ale-au-Togo---une-approche-ARDL/assets/images/serie_dif) 
-
+Figure 2 : Présentation des séries en différence première
+![image alt] (https://github.com/Data-and-ME-Enthusiast/D-terminants-de-la-production-du-c-r-ale-au-Togo---une-approche-ARDL/blob/main/graphs/serie_dif.png) 
 Source : Auteur, à partir des données de l’étude
 
 #### 6.1.2. Test de racine unitaire 
