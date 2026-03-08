@@ -45,11 +45,11 @@ En Ethiopie, (Shita et al., 2018) ont utilisé une approche ARDL pour analyser l
 Dans le cas du Togo, (Lardja & Mawuena, 2022) dans leur travail avait utilisé le modèle double logarithme pour analyser les déterminants de la productivité agricole. Il ressort de leur analyse qu’il existe un effet positif et significatif de la taille du ménage, des dépenses d’investissement dans l’achat des engrais, des phytosanitaires, des motoculteurs, et de la quantité de récolte vendue sur la productivité agricole au Togo. 
 
 Dans le cadre de notre étude, pour répondre à nos questions de recherche, nous utiliserons le modèle autorégressif à retards échelonnés sur des données annuelles de 1962 à 2023, extraites de la base de données des Indicateurs du développement dans le monde de la Banque mondiale. Le choix du modèle ARDL est justifié par sa capacité à prendre en compte à la fois les relations à court et à long terme entre les variables, ainsi que par sa flexibilité en termes de stationnarité des séries temporelles. Les variables étudiées sont :
-Variable dépendante (Y) : Production céréalière (tonnes)
+Variable dépendante ($Y$) : Production céréalière (tonnes)
 Variables explicatives:
-- Consommation d'engrais par kilomètre carré de terres arables kg/km² (X_3)
-- Utilisation de machines et tracteurs par 100 kilomètres carrés de terres arables en nombre (X_2)
-- Superficie des terres agricoles rn km² (X_3).
+- Consommation d'engrais par kilomètre carré de terres arables kg/km² ($X_1$)
+- Utilisation de machines et tracteurs par 100 kilomètres carrés de terres arables en nombre ($X_2$)
+- Superficie des terres agricoles rn km² ($X_3$).
 
 ## 4. Technique d’estimation 
 Pour réaliser notre investigation, nous avons utiliser les séries temporelles couvrant la période de 1962 à 2023. Nous avons dans un premier temps étudier les propriétés statistiques de nos séries. Cette étude des propriétés statistiques s’est faite par deux analyses. La   première analyse est celle graphique. Il s’agit de visualiser l’évolution dans le temps des séries impliquées dans l’étude. La seconde analyse porte sur l’analyse de la stationnarité de nos séries. A cet effet, le test de racine unitaire augmenté de Dickey Fuller (Dickey and Fuller, 1979) a été utilisé. Les résultats de ce test ont révélé qu’une série est stationnaire en niveau et les autres en différence première. Ce qui nous a conduit au choix du modèle Autorégressif à Retard Distribué (ARDL) pour extraire les relations à long termes et les dynamiques de court terme pouvant existées entre nos séries. 
@@ -62,13 +62,12 @@ y_t = \alpha + \sum_{i=1}^{p} \beta_i y_{t-i} + \sum_{j=0}^{q} \gamma_j x_{t-j} 
 $$
 
 ## Où :
-
-1. $y_t$ est **la variable dépendante** au temps $t$.
-2. $x_t$ est **la variable explicative** au temps $t$.
-3. $p$ et $q$ sont **les ordres des lags** pour les variables dépendantes et explicatives respectivement.
-4. $\alpha$ est **la constante**.
-5. $\beta_i$ et $\gamma_j$ sont **les coefficients** à estimer.
-6. $\epsilon_t$ est **le terme d'erreur**.
+- $y_t$ est **la variable dépendante** au temps $t$.
+- $x_t$ est **la variable explicative** au temps $t$.
+- $p$ et $q$ sont **les ordres des lags** pour les variables dépendantes et explicatives respectivement.
+- $\alpha$ est **la constante**.
+- $\beta_i$ et $\gamma_j$ sont **les coefficients** à estimer.
+- $\epsilon_t$ est **le terme d'erreur**.
 
 ## 6. Résultats et discutions 
 Cette section présente les résultats de l'analyse quantitative effectuée pour identifier les déterminants de la production de céréale au Togo. Les résultats sont basés sur les données couvrant la période de 1962 à 2023 et la modélisation multivariée des séries temporelles. 
@@ -90,25 +89,25 @@ Figure 2 : Présentation des séries en différence première
 Source : Auteur, à partir des données de l’étude
 
 #### 6.1.2. Test de racine unitaire 
-Les résultats présentés dans le tableau ci-dessous démontrent que seule la série X_3 est stationnaire en niveau. En effet, la valeur absolue de la statistique du test (2.713) est supérieure aux valeurs seuil lues (2.619; 1.950 et 1.609). Par contre, lorsqu’on différencie les autres séries d’ordre 1, elles deviennent toutes stationnaires. La prise en compte de la série X_3 en niveau et des autres séries en différence première, nous permet d’obtenir une meilleure modélisation de nos séries. 
+Les résultats présentés dans le tableau ci-dessous démontrent que seule la série $X_3$ est stationnaire en niveau. En effet, la valeur absolue de la statistique du test (2,713) est supérieure aux valeurs seuil lues (2,619; 1.950 et 1,609). Par contre, lorsqu’on différencie les autres séries d’ordre 1, elles deviennent toutes stationnaires. La prise en compte de la série X_3 en niveau et des autres séries en différence première, nous permet d’obtenir une meilleure modélisation de nos séries. 
 
 Tableau 1 : Test de stationnarité en niveau 
 
 |Variables |Test ADF  |Valeurs critiques|   |          | Décision |
 |----------|----------|----------|----------|----------|----------|
 |          |          |   1%     |5%        | 10%      |          |
-| Y        | -2,389   |  -3,577  |-2,928    |  -2,599  | Non stationnaire|
-| X1       | -0,289   |  -2,636  |-1,950    |-1,610    | Non stationnaire|
-| X2       |1,006     | -2,636   |-1,950    |-1,606    | Non stationnaire|
-| X3       |-2,713    | -2,619   |-1,950    |-1,610    | Stationnaire   |
+| $Y$      | -2,389   |  -3,577  |-2,928    |  -2,599  | Non stationnaire|
+| $X_1$    | -0,289   |  -2,636  |-1,950    |-1,610    | Non stationnaire|
+| $X_2$    |1,006     | -2,636   |-1,950    |-1,606    | Non stationnaire|
+| $X_3$    |-2,713    | -2,619   |-1,950    |-1,610    | Stationnaire   |
 
 Tableau 2 : Test de stationnarité en différence première 
 |Variables |Test ADF  |Valeurs critiques|   |          | Décision |
 |----------|----------|----------|----------|----------|----------|
 |          |          |   1%     |5%        | 10%      |          |
-| Y        | -8,781   |  -2,623  |-1,950    |-1,609    |Stationnaire|
-| X1       | -6,801   |  -2,636  |-1,950    |-1,609    |Stationnaire|
-| X2       | -3,757   |  -2,636  |-1,950    |-1,609    |Stationnaire|
+| $Y$      | -8,781   |  -2,623  |-1,950    |-1,609    |Stationnaire|
+|  $X_1$   | -6,801   |  -2,636  |-1,950    |-1,609    |Stationnaire|
+| $X_3$    | -3,757   |  -2,636  |-1,950    |-1,609    |Stationnaire|
 
 Source : Auteur, à partir des données de l’étude
 
@@ -117,10 +116,13 @@ Nous signalons que le test de cointégration aux bornes de Pesaran et al. (2001)
 H0 : Pas de cointégration entre les variables
 Accepter si F < à la valeur critique I (0) 
 Rejeter si F > à la valeur critique I (1) 
-Tableau 2 : Test de cointégration aux bornes
-Valeur critique 	[I_0] L_1	[I_0] L_1	[I_0] L_05	[I_0] L_05	[I_0] L_01	[I_0] L_01
-k_3	2,72	3,77	3,23	4,35	4,29	5,61
-F statistic	2,376
+
+Tableau 3 : Test de cointégration aux bornes
+|Valeur critique|I_0 L_1|I_0 L_1 |I_0 L_05  |I_0 L_05  | I_0 L_01 |I_0 L_01  |
+|----------|----------|----------|----------|----------|----------|----------|
+| k_3      |  2,72	  | 3,77	 | 3,23	    | 4,35	   | 4,29	  |  5,61    |
+| F statistic|	2,376 | 
+
 Source : Auteur, à partir des données de l’étude
 
 Les résultats du test présenté dans le tableau ci-dessus montrent une présence d’une cointégration entre les séries. En effet, la statistique du test F est inférieure à la valeur critique [I_0] L_05 au seuil de 5% (2,376 < 3,23). Le modèle approprié à estimer pour notre étude est donc le modèle à correction d’erreur. La sélection du nombre de retards optimaux autrement dit du modèle optimal se fait automatiquement par le logiciel STATA à l’aide du critère d’information BIC. Ainsi le modèle optimal à estimer est le modèle ARDL (1, 0, 0, 0). 
@@ -131,9 +133,9 @@ Le tableau ci-dessous présente les résultats d'un modèle ARDL (AutoRegressive
 L’analyse des résultats révèle que de façon générale le modèle explique environ 21.36% de la variation de la production céréalière par hectare. 
 L’analyse spécifique des séries impliquées dans le modèle révèle que le coefficient associé à la variable explicative est significatif au seuil de 5%. Ce qui indique qu’une diminution de la production céréalière par hectare précédente de 1 unité est associée à une diminution de 0,2579 unités de la production actuelle. Cela indique que les écarts par rapport à l'équilibre à long terme sont corrigés à un taux de 25,79% par période.
 
-De la même manière, le coefficient associé à la série X_3 est significatif au seuil de 5%. Cela implique qu’une augmentation de 1 unité des terres agricoles est associée à une augmentation de 0.0435 unités de la production céréalière à long terme. Cela indique que l'augmentation de la surface de terres agricoles a un effet positif et significatif sur la production céréalière.
+De la même manière, le coefficient associé à la série $X_3$ est significatif au seuil de 5%. Cela implique qu’une augmentation de 1 unité des terres agricoles est associée à une augmentation de 0.0435 unités de la production céréalière à long terme. Cela indique que l'augmentation de la surface de terres agricoles a un effet positif et significatif sur la production céréalière.
 
-Les séries X1 et X2 et la constante par contre ont des coefficients non significatifs. Ce qui signifie que la consommation d'engrais et la mécanisation agricole n'ont pas d'effet significatif sur la production céréalière à long terme et qu'il n'y a pas d'effet fixe notable sur la production céréalière à court terme (constante).
+Les séries $X_1$ et $X_2$ et la constante par contre ont des coefficients non significatifs. Ce qui signifie que la consommation d'engrais et la mécanisation agricole n'ont pas d'effet significatif sur la production céréalière à long terme et qu'il n'y a pas d'effet fixe notable sur la production céréalière à court terme (constante).
 
 Tableau 3 : Résultats d'estimation du modèle ARDL (1, 0, 0, 0)
 |Variables |Coefficients|Valeurs p|
@@ -151,10 +153,10 @@ Source : Auteur, à partir des données de l’étude
 Les tests d’autocorrélation et d’hétéroscédasticité des erreurs révèlent une absence d’autocorrélation et d’hétéroscédasticité des erreurs. En effet, les p-values associées respectivement à ces tests (0,0984 et 0,1385) sont supérieurs au seuil de 5%. 
 
 ## 7. Conclusion et recommandations
-L'analyse des déterminants de la production céréalière par hectare au Togo, sur la période 1966-2023, en utilisant un modèle ARDL a révélé plusieurs points clés. La production céréalière par hectare précédente influence négativement la production actuelle, avec une vitesse d'ajustement d'environ 25.79% par période vers l'équilibre à long terme. La seule variable significative à long terme est la surface des terres agricoles, dont l'augmentation a un effet positif et significatif sur la production céréalière. En revanche, la consommation d'engrais et la mécanisation agricole n'ont pas d'effet significatif sur la production céréalière à long terme.
+L'analyse des déterminants de la production céréalière par hectare au Togo, sur la période 1966-2023, en utilisant un modèle ARDL a révélé beaucoup de chose. La production céréalière par hectare précédente (année précédente) influence négativement la production actuelle, avec une vitesse d'ajustement d'environ 25.79% par période vers l'équilibre à long terme. La seule variable significative à long terme est la surface des terres agricoles dont l'augmentation a un effet positif et significatif sur la production céréalière. En revanche, la consommation d'engrais et la mécanisation agricole n'ont pas d'effet significatif sur la production céréalière à long terme.
 
-Pour améliorer la production céréalière au Togo, il est recommandé de mettre en place des politiques d'extension des terres agricoles, incluant des initiatives pour faciliter l'accès aux terres arables et la réhabilitation des terres dégradées. Bien que la consommation d'engrais n'ait pas montré d'effet significatif, des recherches supplémentaires sont nécessaires pour identifier les types d'engrais et les pratiques d'application les plus efficaces. Il est également important de former les agriculteurs sur les meilleures pratiques d'utilisation des engrais. Concernant la mécanisation agricole, il serait utile d'évaluer l'efficacité des machines utilisées et de faciliter l'accès au financement pour permettre aux agriculteurs d'acquérir des équipements agricoles modernes.
-Enfin, il est crucial d'investir dans des infrastructures rurales, telles que des routes et des systèmes d'irrigation, pour soutenir l'expansion des terres agricoles et améliorer l'accès aux intrants agricoles. Fournir une assistance technique et des services de vulgarisation agricole aiderait également les agriculteurs à adopter des pratiques agricoles modernes et durables. En mettant l'accent sur l'expansion des terres agricoles et en continuant à explorer les meilleures pratiques pour l'utilisation des engrais et la mécanisation, le Togo pourra maximiser la productivité et la durabilité de sa production céréalière.
+Pour améliorer la production céréalière au Togo, il est recommandé de mettre en place des politiques d'extension des terres agricoles incluant des initiatives pour faciliter l'accès aux terres arables et la réhabilitation des terres dégradées. Bien que la consommation d'engrais n'ait pas montré d'effet significatif, des recherches supplémentaires sont nécessaires pour identifier les types d'engrais et les pratiques d'application les plus efficaces. Il est également important de former les agriculteurs sur les meilleures pratiques d'utilisation des engrais. Concernant la mécanisation agricole, il serait utile d'évaluer l'efficacité des machines utilisées et de faciliter l'accès au financement pour permettre aux agriculteurs d'acquérir des équipements agricoles modernes.
+Enfin, il est primordial d'investir dans des infrastructures rurales, telles que des routes et des systèmes d'irrigation, pour soutenir l'expansion des terres agricoles et améliorer l'accès aux intrants agricoles. Fournir une assistance technique et des services de vulgarisation agricole aiderait également les agriculteurs à adopter des pratiques agricoles modernes et durables. En mettant l'accent sur l'expansion des terres agricoles et en continuant à explorer les meilleures pratiques pour l'utilisation des engrais et la mécanisation, le Togo pourra maximiser la productivité et la durabilité de sa production céréalière.
  
 
 ## 8. Bibliographie
