@@ -166,3 +166,9 @@ Enfin, il est primordial d'investir dans des infrastructures rurales, telles que
 - Omiekuma Pau, O., Sunday, ItoroEkpenyong, B., & Joseph Bidemi, O. (2018). Determinants of Agricultural Output in Nigeria. International Journal of Science and Management Studies (IJSMS), 65‑73. https://doi.org/10.51386/25815946/ijsms-v1i4p109
 - Shita, A., Kumar, N., & Singh, S. (2018). Determinants of Agricultural Productivity in Ethiopia : ARDL Approach. The Indian Economic Journal, 66(3‑4), 365‑374. https://doi.org/10.1177/0019466220941418
 
+
+----------------------------------------------------
+### 📞 Me contacter
+- 📧 **Emails :** mjquiet@outlook.fr | moudjibouomotoyosi19@gmail.com
+- 📞 **Téléphone :** (+228) 92 28 10 25
+- 📍 **Localisation :** Kara, Togo
